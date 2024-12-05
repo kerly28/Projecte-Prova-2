@@ -1,47 +1,41 @@
 ﻿using System;
 using Prova;
-namespace Exericici2
+
+//PRE:L'usuari introdueix 3 numeros (dia, mes i any)
+namespace Exercici3
 {
     public class Program
     {
         public static void Main()
         {
-            //inici constants
-            const string KeySearch = "Introdueix quin valor vols buscar:";
-            const string Position = "El teu número esta en la posició";
+            //constants de missatges
+            const string InputDay = "Introdueix el dia: ";
+            const string InputMonth = "Introdueix el mes: ";
+            const string InputYear = "Introdueix l'any: ";
+            const string Validate= "La data introduida és vàlida";
+            const string NotValidate = "La data introduida no és vàlida";
 
-            int[] arr = { 10, -4, 6, 4, 8, 13, 2, -4 };
+            //demanen a l'usuari que introdueixi el dia, mes i any
+            Console.Write(InputDay);
+            int day = Convert.ToInt32(Console.ReadLine());
+            Console.Write(InputMonth);
+            int month = Convert.ToInt32(Console.ReadLine());
+            Console.Write(InputYear);
+            int year = Convert.ToInt32(Console.ReadLine());
 
-            //primer ordenm l'array
-            FirstSort.Order(arr, 0, arr.Length - 1);
-
-            //Indiquem quin valor volem buscar
-            Console.WriteLine(KeySearch);
-            int key = Convert.ToInt32(Console.ReadLine());
-            int result = FirstSort.BinarySearch(arr, 0, arr.Length - 1, key);
-
-            //Mostrem l'array ordenat
-            for (int i = 0; i < arr.Length; i++)
+            //es criden els mètodes per validar el dia, mes i any
+            bool dayValid = ExerciciTres.Day(day);
+            bool monthValid = ExerciciTres.Month(month);
+            bool yearValid = ExerciciTres.YearValidate(year);
+            if (dayValid && monthValid && yearValid)
             {
-                Console.Write(arr[i] + " ");
+                Console.WriteLine(Validate);
             }
-
-            try
+            else
             {
-                if (result == -1)
-                {
-                    Console.WriteLine("El teu número no esta en l'array");
-                }
-                else
-                {
-                    Console.WriteLine(Position + " " + result);
-                }
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Error");
+                Console.WriteLine(NotValidate);
             }
         }
-
     }
 }
+//POST:Es retorna si la data està dins el rang o no
