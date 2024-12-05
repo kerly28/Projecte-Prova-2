@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Prova2Library">
+      <HintPath>..\Prova2Library\bin\Debug\net8.0\Prova2Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

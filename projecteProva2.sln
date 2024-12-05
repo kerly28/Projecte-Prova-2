@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projecteProva2", "projecteProva2.csproj", "{FA28D925-E39C-4202-A939-18F1C1B9BE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova2Library", "..\Prova2Library\Prova2Library.csproj", "{90059C20-F20B-455D-92EC-6543AE7E68C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProva2", "..\TestProva2\TestProva2.csproj", "{0F95E015-B6E5-4440-97D2-EFACFD04AE25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FA28D925-E39C-4202-A939-18F1C1B9BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA28D925-E39C-4202-A939-18F1C1B9BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA28D925-E39C-4202-A939-18F1C1B9BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90059C20-F20B-455D-92EC-6543AE7E68C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90059C20-F20B-455D-92EC-6543AE7E68C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90059C20-F20B-455D-92EC-6543AE7E68C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90059C20-F20B-455D-92EC-6543AE7E68C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F95E015-B6E5-4440-97D2-EFACFD04AE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F95E015-B6E5-4440-97D2-EFACFD04AE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F95E015-B6E5-4440-97D2-EFACFD04AE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F95E015-B6E5-4440-97D2-EFACFD04AE25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
